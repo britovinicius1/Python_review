@@ -1,4 +1,0 @@
-#%%
-print("eae")
-# %%
-print("eae")
