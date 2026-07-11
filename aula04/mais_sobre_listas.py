@@ -1,0 +1,1 @@
+# Lista -> Conjunto de valores que pode ser adicionado qualquer tipo
