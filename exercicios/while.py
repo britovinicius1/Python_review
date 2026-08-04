@@ -27,17 +27,7 @@ while sexo != 'F' and sexo != 'M':
 # [4] novos números
 # [5] sair do programa
 
-Aqui está o programa completo do desafio do menu:
-
-python
-#%%
 # Crie um programa que leia dois valores e mostre um menu na tela:
-# [1] somar
-# [2] multiplicar
-# [3] maior
-# [4] novos números
-# [5] sair do programa
-# Seu programa deverá realizar a operação solicitada em cada caso.
 
 numero_1 = int(input("Digite o 1º número: "))
 numero_2 = int(input("Digite o 2º número: "))
@@ -67,12 +57,11 @@ while opcao != 5:
     else:
         print("Digite um número da lista.")
 
-# Seu programa deverá realizar a operação solicitada em cada caso.
-
 #060)Faça um programa que leia um número qualquer e mostre o seu fatorial.
 
 # Ex:
 # 5! = 5x4x3x2x1 = 120
+
 
 #061)Refaça o DESAFIO 051, lendo o primeiro termo e a razão de uma PA, mostrando os 10 primeiros termos da progressão usando a estrutura while.
 
