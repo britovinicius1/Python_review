@@ -57,17 +57,51 @@ while opcao != 5:
     else:
         print("Digite um número da lista.")
 
+#%%
 #060)Faça um programa que leia um número qualquer e mostre o seu fatorial.
 
 # Ex:
 # 5! = 5x4x3x2x1 = 120
+
+numero = int(input("Digite um numero:"))
+fatorial = 1
+contador = 1
+while contador <= numero:
+    fatorial = fatorial * contador
+    contador = contador + 1
+print(fatorial)
+
+numero = int(input("Digite um número: "))
+
+fatorial = 1
+contador = numero
+while contador > 0:
+    fatorial = fatorial * contador
+    contador = contador - 1
+
+print(f"{numero}! = {fatorial}")
 
 
 #061)Refaça o DESAFIO 051, lendo o primeiro termo e a razão de uma PA, mostrando os 10 primeiros termos da progressão usando a estrutura while.
 
 #062)Melhore o DESAFIO 061, perguntando para o usuário se ele quer mostrar mais alguns termos. O programa encerra quando ele disser que quer mostrar 0 termos.
 
-#063)Crie um programa que leia vários números inteiros pelo teclado. O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final, mostre quantos números foram digitados e qual foi a soma entre eles (desconsiderando o flag).
+#063)Crie um programa que leia vários números inteiros pelo teclado. 
+# O programa só vai parar quando o usuário digitar o valor 999, 
+# que é a condição de parada. No final, mostre quantos números foram digitados 
+# e qual foi a soma entre eles (desconsiderando o flag).
+#%%
+contador = 0
+soma = 0
+numero = 0
+while numero !=999:
+    numero = int(input("Digite um número!"))
+    if numero != 999:
+        soma = soma + numero
+        contador = contador + 1
+print(f"Foram digitados {contador} e a soma entre os numeros digitados foi {soma}")
+
+
 
 #064)Crie um programa que leia vários números inteiros pelo teclado. No final da execução, mostre a média entre todos os valores e qual foi o maior e o menor valores lidos. O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores.
 
