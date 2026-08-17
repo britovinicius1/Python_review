@@ -1,4 +1,3 @@
-
 #%%
 #057)Faça um programa que leia o sexo de uma pessoa, 
 # mas só aceite os valores 'M' ou 'F'. 
@@ -103,8 +102,101 @@ print(f"Foram digitados {contador} e a soma entre os numeros digitados foi {soma
 
 
 
+#%%
 #064)Crie um programa que leia vários números inteiros pelo teclado. No final da execução, mostre a média entre todos os valores e qual foi o maior e o menor valores lidos. O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores.
 
 
-
 # %%
+#)##66
+###Crie um programa que leia vários números inteiros pelo teclado. 
+# O programa só vai parar quando o usuário digitar o valor 999, 
+# que é a condição de parada. No final, mostre quantos números foram digitados e qual foi a soma entre eles 
+# (desconsiderando o flag).
+
+
+numero = 0
+soma = 0
+contador = 0
+
+while True:
+    numero = int(input("Insira um número inteiro"))
+    if numero == 999:
+        break
+    soma = soma + numero
+    contador = contador + 1
+print(f"A soma dos números digitados é {soma} e foram digitados {contador} números")
+
+#%%
+#67)
+##Faça um programa que mostre a tabuada de vários números, 
+# um de cada vez, para cada valor digitado pelo usuário. 
+# O programa será interrompido quando o número solicitado for negativo.
+while True:
+    valor = int(input("Qual tabuada você quer ver?"))
+    if valor < 0:
+        print("Saindo do programa...")
+        break
+    print(f"===========Tabuada do {valor} ============")
+    for i in range(0,10):
+        resultado = i * valor
+        print(f"{i} x {valor} = {resultado}")
+    print("="*20)
+
+#%%
+#68)
+#Faça um programa que jogue par ou ímpar com o computador. 
+# O jogo só será interrompido quando o jogador PERDER,
+#  mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.
+import random
+
+contador = 0
+while True:
+    escolha = input("O que você quer, par ou impar? [P/I]").upper()
+    if escolha == "P" or escolha == "I":
+        numero_jogador = int(input("Digite um número de 0 a 5"))
+        numero_computador = random.randint(0, 5)
+        soma = numero_jogador + numero_computador
+
+        if soma % 2 == 0:
+            resultado = "P"
+        else:
+            resultado = "I"
+        
+        if escolha == resultado:
+            print("Você ganhou!!")
+            contador = contador + 1
+        else:
+            print("Você perdeu =(...")
+            print(f"Porem, no total, você ganhou {contador}x")
+            break
+    else:
+        print("Digite uma informação valida...")
+    
+
+#%%
+##69)
+#Crie um programa que leia a idade e o sexo de várias pessoas. 
+# A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar. 
+# No final, mostre:
+
+#A) quantas pessoas tem mais de 18 anos.
+#B) Quantos homens foram cadastrados.
+#C) Quantas mulheres tem menos de 20 anos.
+
+#%%
+#70)
+#Crie um programa que leia o nome e o preço de vários produtos. 
+# O programa deverá perguntar se o usuário vai continuar. 
+# No final, mostre:
+
+#A) Qual é o total gasto na compra.
+#B) Quantos produtos custam mais de R$1000.
+#C) Qual é o nome do produto mais barato.
+
+#%%
+#71)
+#Crie um programa que simule o funcionamento de um caixa eletrônico. 
+# No início, pergunte ao usuário qual será o valor a ser sacado (número inteiro) 
+# e o programa vai informar quantas cédulas de cada valor serão entregues.
+
+#OBS: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1.
