@@ -183,6 +183,32 @@ while True:
 #B) Quantos homens foram cadastrados.
 #C) Quantas mulheres tem menos de 20 anos.
 
+maior_18 = 0
+masculino = 0
+mulher_menor = 0
+
+while True:
+    continuar = input("Deseja continuar? [S/N]").upper()
+    if continuar == "S":
+        idade = int(input("Digite a idade da pessoa"))
+        sexo = input("Qual o sexo da pessoa? [M/F]").upper()
+
+        if idade > 18:
+            maior_18 += 1
+        if sexo == "M":
+            masculino += 1
+        if sexo == "F" and idade < 20:
+            mulher_menor += 1
+
+    elif continuar == "N":
+        print("Finalizando programa... Tchau =)")
+        print(f"no total temos, \nA){maior_18} \nB){masculino} \nC){mulher_menor}")
+        break
+
+    else:
+        print("Dite uma opção valida... [S/N]")
+
+
 #%%
 #70)
 #Crie um programa que leia o nome e o preço de vários produtos. 
@@ -193,6 +219,32 @@ while True:
 #B) Quantos produtos custam mais de R$1000.
 #C) Qual é o nome do produto mais barato.
 
+total = 0 
+preco_maior_que_1k = 0
+mais_barato = ""
+valor_mais_barato = None
+while True:
+    continuar = input("Quer continuar? [S/N]").upper()
+
+    if continuar == "S":
+        nome_produto = input("Qual produto deseja comprar?")
+        preco = float(input("Quanto custou o produto?"))
+        total = preco + total
+
+        if preco > 1000:
+            preco_maior_que_1k += 1
+
+        if valor_mais_barato is None or preco < valor_mais_barato:
+            mais_barato = nome_produto
+            valor_mais_barato = preco
+
+    elif continuar == "N":
+        print(f"A) O total pago foi {total}\n B){preco_maior_que_1k} custam mais que mil \n C){mais_barato} é o produto mais barato")
+        break
+    else:
+        print("Digite uma opcao correta... [S/N]")     
+
+
 #%%
 #71)
 #Crie um programa que simule o funcionamento de um caixa eletrônico. 
@@ -200,3 +252,39 @@ while True:
 # e o programa vai informar quantas cédulas de cada valor serão entregues.
 
 #OBS: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1.
+
+print("=" *30)
+print("BANCO VINI".center(30))
+print("=" *30)
+valor = int(input("Qual valor você gostaria de sacar? R$"))
+total = valor
+ced = 50
+total_cedulas = 0
+
+while True:
+    if total >= ced:
+        total -= ced
+        total_cedulas += 1
+    else:
+        if total_cedulas > 0:
+            print(f"Total de {total_cedulas} cédulas de R${ced}")
+        if ced == 50:
+            ced = 20
+        elif ced == 20:
+            ced = 10
+        elif ced == 10:
+            ced = 1
+        total_cedulas = 0 
+        if total == 0:
+            break
+
+print("=" *30)
+print("Volte sempre...")
+
+
+
+
+
+
+
+# %%
