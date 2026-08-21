@@ -34,4 +34,12 @@ Este repositório foi criado para revisar conceitos fundamentais da linguagem Py
  - List Comprehension
  - 
 
+ 7. === Pasta de exercicios === 
+ - Resolução de [30 exercicios até o momento]
+    - Exercicios sobre:
+        - Base python [x]
+        - Estrutura de controle [x]
+        - for [x]
+        - while [x]
+        - listas [x]
 
