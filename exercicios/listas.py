@@ -44,11 +44,21 @@ print("=-"*30)
 # Caso o número já exista lá dentro, ele não será adicionado. No final, s
 # erão exibidos todos os valores únicos digitados, em ordem crescente.
 #
-
-
-
-
-
-
-
+lista = []
+while True:
+    continuar = input("Deseja continuar? [S/N]").upper()
+    if continuar == "S":
+        numero = int(input("Digite um número..."))
+        if numero not in lista:
+            lista.append(numero)
+            print("Numero adicionado na lista..")
+        else:
+            print("Numero ja está na lista...Tente outro número")
+    elif continuar == "N":
+        lista.sort()
+        print(f"A lista digitada foi.. {lista}")
+        break
+    else:
+        print("Digite uma opção valida!!")
+        
 # %%
