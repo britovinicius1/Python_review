@@ -60,5 +60,86 @@ while True:
         break
     else:
         print("Digite uma opção valida!!")
-        
+
+##
+lista = []
+while True:
+        numero = int(input("Digite um número..."))
+
+        if numero not in lista:
+            lista.append(numero)
+            print("Numero adicionado na lista..")
+        else:
+            print("Numero ja está na lista...Tente outro número")
+
+        continuar = input("Deseja continuar? [S/N]").upper()
+
+        if continuar == "N":
+            lista.sort()
+            print(f"A lista digitada foi.. {lista}")
+            break
+
+# %%
+#080)##
+##Crie um programa onde o usuário possa digitar 
+# cinco valores numéricos e cadastre-os em uma lista, 
+# já na posição correta de inserção 
+# (sem usar o sort()).
+#No final, mostre a lista ordenada na tela.
+
+lista = []
+
+for i in range(0,5):
+    n = int(input("Digite um valor:"))
+    if i == 0 or n > lista[-1]:
+        lista.append(n)
+    else:
+        pos = 0
+        while pos < len(lista):
+            if n <= lista[pos]:
+                lista.insert(pos,n)
+                print(f"Adicionado na pposicao {pos} da lista")
+                break
+            pos += 1
+print('-=' * 30)
+print(f"os valores digitados foram {lista}")
+
+#%%
+#081)
+#Crie um programa que vai ler vários números e colocar em uma lista.
+#Depois disso, mostre:
+#A) Quantos números foram digitados.
+#B) A lista de valores, ordenada de forma decrescente.
+#C) Se o valor 5 foi digitado e está ou não na lista.
+
+lista = []
+
+while True:
+    numero = int(input("Digite um número..."))
+    lista.append(numero)
+    
+    continuar = input("Deseja continuar? [S/N]").upper()
+    while continuar not in ("S", "N"):
+        continuar = input("Opção inválida! Deseja continuar? [S/N]").upper()
+    
+    if continuar == "N":
+        break
+
+qtde_numeros = len(lista)
+lista.sort(reverse=True)
+print(f"Foi digitado {qtde_numeros} números...")
+print(f"Segue a lista ->  {lista}")
+if 5 in lista:
+    print("O valor 5 foi digitado na lista =)")
+else:
+    print("O valor 5 não foi encontado na lista...")
+
+
+
+
+
+
+
+
+
 # %%
