@@ -134,7 +134,8 @@ if 5 in lista:
 else:
     print("O valor 5 não foi encontado na lista...")
 
-#81)
+#%%
+#82)
 #Crie um programa que vai ler vários números e colocar em uma lista.
 
 #Depois disso, 
@@ -142,8 +143,162 @@ else:
 # respectivamente.
 #Ao final, mostre o conteúdo das três listas geradas...
 
+lista = []
+lista_pares = []
+lista_impares = []
+while True:
+    numero = int(input("Digite um numero"))
+    lista.append(numero)
+    resposta = str(input("Quer continuar? [S/N]").upper())
+    if resposta == "N":
+        print("Lista populada")
+        print("="*20)
+        break
 
-
-
+for i in lista:
+    if i % 2 == 0:
+        lista_pares.append(i)
+    else:
+        lista_impares.append(i)
+        
+lista.sort()
+lista_pares.sort()
+lista_impares.sort()
+print(f"A lista populada foi -> {lista}")
+print(f"Segue a lista de pares -> {lista_pares}")
+print(f"Lista de impares -> {lista_impares}")
 
 # %%
+#83)--->>> Fazer esse depois : Crie um programa onde o 
+# usuário digite uma expressão qualquer que use parênteses. 
+# Seu aplicativo deverá analisar se a expressão passada está com os 
+# parênteses abertos e fechados na ordem correta.
+
+#%%
+#084)
+#Faça um programa que leia nome e peso de várias pessoas, guardando tudo em uma lista. 
+# No final, mostre:
+
+#A) Quantas pessoas foram cadastradas.
+
+#B) Uma listagem com as pessoas mais pesadas.
+
+#C) Uma listagem com as pessoas mais leves.
+#
+lista_pessoas = []
+lista = []
+maior = menor = 0
+while True:
+    nome = str(input("Digite o nome da pessoa:"))
+    peso = float(input("Digite o peso da pessoa:"))
+    lista.append(nome)
+    lista.append(peso)
+    if len(lista_pessoas) == 0:
+        maior = menor = lista[1]
+    else:
+        if lista[1] > maior:
+            maior = lista[1]
+        if lista[1] < menor:
+            menor = lista[1]
+
+    lista_pessoas.append(lista[:])
+    lista.clear()
+    resposta = input("Quer continuar?[S/N]").upper()
+    if resposta == "N":
+        break
+
+qtde_pessoas = len(lista_pessoas)
+print("=" * 30)
+print("=" * 15, "informações", "="*15)
+print(f"A lista de pessoas cadastrada -> {lista_pessoas}")
+print(f"A)Ao todo,foram cadastrado {qtde_pessoas}pessoas...")
+
+print(f"O maior peso foi de {maior}Kg")
+for nome,peso in lista_pessoas:
+    if peso == maior:
+        print(f"[{nome}]")
+
+print(f"O menor peso foi de {menor}Kg")
+for p in lista_pessoas:
+    if p[1] == menor:
+        print(f"[{p[0]}]")
+
+
+#%%
+#085)
+#Crie um programa onde o usuário possa digitar sete valores numéricos e cadastre-os 
+# em uma lista única que mantenha separados os valores pares e ímpares.
+#  No final, mostre os valores pares e ímpares em ordem crescente.
+
+
+lista_completa = []
+lista_pares = []
+lista_impares = []
+for i in range(0,7):
+    numero = int(input(f"Digite o {i+1}º numero: "))
+    if numero % 2 == 0:
+        lista_pares.append(numero)
+    else:
+        lista_impares.append(numero)
+lista_pares.sort()
+lista_impares.sort()
+lista_completa = [lista_pares,lista_impares]
+print(f"A lista final -> {lista_completa}")
+
+#%%
+#Outra forma mais fácil
+lista_numeros = [[],[]]
+for i in range(1,8):
+    valor = int(input(f"Digite o {i}º número:"))
+    if valor % 2 == 0:
+        lista_numeros[0].append(valor)
+    else:
+        lista_numeros[1].append(valor)
+
+lista_numeros[0].sort()
+lista_numeros[1].sort()
+print(f"Os valores pares digitados foram ->> {lista_numeros[0]}")
+print(f"Os valores impares digitados foram ->> {lista_numeros[1]}")
+
+
+#%%
+#086)
+#
+#Crie um programa que crie uma matriz de dimensão 3x3 e 
+# preencha com valores lidos pelo teclado. 
+# No final, mostre a matriz na tela, com a formatação correta.
+#
+
+
+
+#%%
+
+#087)
+#Aprimore o desafio anterior, mostrando no final:
+
+#A) A soma de todos os valores pares digitados.
+
+#B) A soma dos valores da terceira coluna.
+
+#C) O maior valor da segunda linha.
+#
+
+#%%
+#088)
+#Faça um programa que ajude um jogador da MEGA SENA a criar palpites. 
+# O programa vai perguntar quantos jogos serão gerados e vai sortear 
+# 6 números entre 1 e 60 para cada jogo, 
+# cadastrando tudo em uma lista composta.
+
+
+
+
+
+#%%
+#089)Crie um programa que leia nome e duas notas de vários alunos e guarde tudo em uma lista composta. 
+# No final, mostre um boletim contendo a média de cada um e permita que 
+# o usuário possa mostrar as notas de cada aluno individualmente.
+#
+#
+#
+
