@@ -89,9 +89,72 @@ for i,v in enumerate(gols):
 print(f"Foi um total de {jogador['Total']} gols no campeonato!!")
 
 print("=-"*30)
+# %%
+#94) 
+#Crie um programa que leia nome, sexo e idade de várias pessoas,
+#  guardando os dados de cada pessoa em um dicionário e todos os dicionários em uma lista. No final, mostre:
+#A) Quantas pessoas foram cadastradas
+#B) A média de idade do grupo.
+#C) Uma lista com todas as mulheres.
+#D) Uma lista com todas as pessoas com idade acima da média.
 
+pessoas = []
+sexo = None
+
+print("=-"*30)
+print("-"*15, "BEM VINDO!!!", "-"*15)
+
+while True:
+    nome = str(input("Nome:"))
+    while True:
+        sexo = str(input("Digite [M/F]")).upper()
+        if sexo in ('M', 'F'):
+            break
+        else:
+            print("Digite uma letra valida..")
+
+    idade = int(input("Idade:"))
+    pessoa = {"nome": nome, "sexo": sexo, "idade": idade}
+    pessoas.append(pessoa)
+
+    while True:
+        opcao = str(input("Quer continuar? [S/N]")).upper()
+        if opcao in ('S', 'N'):
+            break
+        else:
+            print("Digite uma letra valida...")
+
+    if opcao == "N":
+        break
+
+idades = []
+mulheres = []
+pessoas_acima_media = []
+
+for pessoa in pessoas:
+    idades.append(pessoa["idade"])
+
+media = sum(idades) / len(idades)
+
+for pessoa in pessoas:
+    if pessoa["sexo"] == "F":
+        mulheres.append(pessoa["nome"])
+
+for pessoa in pessoas:
+    if pessoa["idade"] > media:
+        pessoas_acima_media.append(pessoa["nome"])
+
+print("-"*15, "INFORMAÇÕES DO PROGRAMA", "-"*15)
+print(f"A)Foram cadastradas {len(pessoas)} pessoas")
+print(f"B)A média das idades {media:.1f} pessoas")
+print(f"C)As mulheres da lista são: {mulheres}")
+print(f"D)Pessoas com idade acima da média: {pessoas_acima_media}")
 
     
+
+
+
+
 
 
 
