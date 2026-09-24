@@ -150,6 +150,9 @@ print(f"B)A média das idades {media:.1f} pessoas")
 print(f"C)As mulheres da lista são: {mulheres}")
 print(f"D)Pessoas com idade acima da média: {pessoas_acima_media}")
 
+##outra forma:
+
+
     
 
 
