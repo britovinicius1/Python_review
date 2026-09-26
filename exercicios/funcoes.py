@@ -122,7 +122,17 @@ while True:
 
 maior(*numeros_digitados)
 
+#%%
+#Dobrando o valor de uma lista
 
+def dobra(list):
+    pos = 0 
+    while pos < len(list):
+        list[pos] *= 2
+        pos +=1
+valores = [8,4,2,10]
+dobra(valores)
+print(valores)
 
 
 
