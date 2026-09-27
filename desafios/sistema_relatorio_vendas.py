@@ -72,17 +72,6 @@ def total_por_vendedor(*vendas):
 print("="*15,"Relatório de vendas", "="*15)
 print("="*51)
 
-while True:
-    print("Cadastro:")
-
-    nome = str(input("Nome:"))
-    
-    
-
-
-
-
-
 venda_1 = registrar_venda(
     "Vinicius",
     "Televisão",
@@ -98,9 +87,29 @@ venda_2 = registrar_venda(
     "teclado",
     forma_pagamento = "Pix",
     desconto = 0.1)
-relatorio(venda_1, venda_2)
-print("\n")
-print(total_por_vendedor(venda_1, venda_2))
+
+venda_3 = registrar_venda(
+    "Rafael",
+    "PS5",
+    "Forno",
+    "MacBook PRO",
+    forma_pagamento = "Pix",
+    desconto = 0.2)
+
+venda_4 = registrar_venda(
+    "Vinicius",
+    "Computador",
+    "Iphone pro max",
+    "Nike",
+    "Cabo USB",
+    forma_pagamento = "Crédito",
+    desconto = 0.15)
+
+lista_vendas = [venda_1,venda_2,venda_3,venda_4]
+
+relatorio(*lista_vendas)
+print(total_por_vendedor(*lista_vendas))
+
 
 
 
