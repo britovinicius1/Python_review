@@ -154,7 +154,6 @@ def notas(*notas, sit=False):
     :return: dicionário com várias informações sobre a situação da turma
     
     """
-    
     maior = 0
     menor = 0
     qtd_notas = len(notas)
@@ -189,9 +188,32 @@ def notas(*notas, sit=False):
             dict_final["SITUACAO"] = situacao
 
     return dict_final
-    
+
+### PROGRAMA PRINCIPAL ###
 resp = notas(10,5,7,8,10,11, sit=True)
 print(resp)
+
+
+### outra maneira
+#mais direta
+
+def notas(*n, sit=False):
+    r = dict()
+    r['total'] = len(n)
+    r['maior'] = max(n)
+    r['menor'] = min(n)
+    r['média'] = sum(n)/len(n)
+
+    if sit:
+        if r['média'] >= 7:
+            r['situacao'] = 'BOA'
+        elif r['média'] >= 5:
+            r['situacao'] = 'RAZOAVEL'
+        else:
+            r["situacao"] = 'RUIM'
+    return r
+
+resp = notas(5,3,4,5, sit=True)
 
 
 # %%
