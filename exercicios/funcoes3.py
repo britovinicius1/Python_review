@@ -100,3 +100,98 @@ else:
 # que vai funcionar de forma semelhante à função input() do Python, 
 # só que fazendo a validação para aceitar apenas um valor numérico.
 
+def leiaInt(msg):
+    while True:
+        n = input(msg)
+        if n.isnumeric():
+            return int(n)
+        print("Erro! Digite um número inteiro válido.")
+
+
+## PROGRAMA PRINCIPAL ##
+idade = leiaInt("Digite sua idade: ")
+print(f"Você tem {idade} anos")
+
+#%%
+
+def leiaInt(msg):
+    ok = False
+    valor = 0
+    while True:
+        n = str(input(msg))
+        if n.isnumeric():
+            valor = int(n)
+            ok = True
+        else:
+            print("\033[0;31mErro!! Digite um número inteiro válido!\033[m")
+            print(f"{n} não é um numero")
+        if ok:
+            break
+    return valor
+n = leiaInt("Digite um número: ")
+print(f"Você digitou o numero {n}")
+
+
+# %%
+#Faça um programa que tenha uma função notas() 
+# que pode receber várias notas de alunos e vai 
+# retornar um dicionário com as seguintes informações:
+
+#Quantidade de notas
+#A maior nota
+#A menor nota
+#A média da turma
+#A situação (opcional)
+
+#Adicione também as docstrings da função.
+
+def notas(*notas, sit=False):
+
+    """
+    -> Função para analisar notas e situações de vários alunos.
+    :param n: uma ou mais notas dos alunos (aceita varias)
+    :param sit: valor opcional, indicando se deve ou não adicionar a situação
+    :return: dicionário com várias informações sobre a situação da turma
+    
+    """
+    
+    maior = 0
+    menor = 0
+    qtd_notas = len(notas)
+    media = sum(notas)/qtd_notas
+
+    for pos,nota in enumerate(notas):
+       
+        if pos == 0:
+            maior = menor = nota
+        else:
+            if nota > maior:
+                maior = nota
+            if nota < menor:
+                menor = nota
+
+    dict_final = {
+            "MAIOR": maior,
+            "MENOR": menor,
+            "MÉDIA": media
+        }  
+             
+    if sit:
+        if media > 6:
+            situacao = "APROVADO"
+            dict_final["SITUACAO"] = situacao
+
+        elif media == 5:
+            dict_final["SITUACAO"] = situacao
+
+        else:
+            situacao = "REPROVADO"
+            dict_final["SITUACAO"] = situacao
+
+    return dict_final
+    
+resp = notas(10,5,7,8,10,11, sit=True)
+print(resp)
+
+
+# %%
