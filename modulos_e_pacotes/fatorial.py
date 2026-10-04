@@ -11,7 +11,7 @@
 ##from uteis import fatorial,dobro (não é tao recomendada - pode dar conflito - vale sempre a ultima importada)
 ## exemplo from random import randit - primeiro é o modulo e o segundo é a função
 
-from uteis import numeros
+from modulos_e_pacotes.uteis import numeros
 
 num = int(input("Digite um valor: "))
 fat = numeros.fatorial(num)
