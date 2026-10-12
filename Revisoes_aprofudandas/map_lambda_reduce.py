@@ -34,3 +34,55 @@ maiusculas = list(map(str.upper, palavras))
 print(maiusculas)
 
 # %%
+#Função filter -> filtra elemenos de uma sequência
+#sintaxe: filter(funcao, sequencia)
+
+def numeros_pares(n):
+    return n % 2 == 0
+
+numeros = [1,2,3,4,5,6,10,20,40,23,25,66,40]
+
+num_par = list(filter(numeros_pares, numeros))
+
+num_par
+
+#%%
+numeros = [1,2,3,4,5,6,10,20,40,23,25,66,40]
+
+num_impar = list(filter(lambda n: n % 2 != 0, numeros))
+
+num_impar
+
+# %%
+##função reduce;
+#Sintaxe: reduce(funcao, sequencia, valor_inicial)
+#ele faz uma operação cumulativa, fazendo cada uma e dps vai acumulando
+
+from functools import reduce
+
+def mult(x,y):
+    return x * y
+
+numeros = [1,2,3,4,5,6] # 1*2*3*5*6 (faz um fatorial !)
+
+total = reduce(mult, numeros)
+total
+
+# %%
+from functools import reduce
+
+def mult(x,y):
+    return x * y
+
+numeros = [1,2,3,4,8,22,44] # 1*2*3*8*22,44 (faz um fatorial !)
+
+total = reduce(mult, numeros)
+total
+
+#%%
+# ((1² + 2²) + 3²)² + 4²
+numeros = [1,2,3,4]
+
+total = reduce(lambda x,y: x**2 + y**2, numeros)
+print(total)
+# %%
