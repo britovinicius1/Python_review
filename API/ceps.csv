@@ -1,0 +1,12 @@
+;cep;logradouro;complemento;unidade;bairro;localidade;uf;estado;regiao;ibge;gia;ddd;siafi;erro
+0;01519-000;Rua do Lavapés;;;Cambuci;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107;
+1;13329-120;Rua das Constelações;;;Condomínio Fechado Village Haras São Luiz;Salto;SP;São Paulo;Sudeste;3545209;6002;11;7005;
+2;21870-370;Rua Matriz de Camaragipe;;;Bangu;Rio de Janeiro;RJ;Rio de Janeiro;Sudeste;3304557;;21;6001;
+3;14400-760;Rua Floriano Peixoto;;;Centro;Franca;SP;São Paulo;Sudeste;3516200;3104;16;6425;
+4;21645-522;Avenida Chrisóstomo Pimentel de Oliveira;de 2 a 1184 - lado par;;Anchieta;Rio de Janeiro;RJ;Rio de Janeiro;Sudeste;3304557;;21;6001;
+5;13600-110;Rua Marechal Deodoro;;;Centro;Araras;SP;São Paulo;Sudeste;3503307;1820;19;6165;
+6;21051-090;Rua Apace;;;Del Castilho;Rio de Janeiro;RJ;Rio de Janeiro;Sudeste;3304557;;21;6001;
+7;09656-000;Avenida do Taboão;de 3013/3014 a 3939/3940;;Taboão;São Bernardo do Campo;SP;São Paulo;Sudeste;3548708;6350;11;7075;
+8;53420-160;Via Local 16;(Lot Nova Aurora);;Jaguaribe;Paulista;PE;Pernambuco;Nordeste;2610707;;81;2513;
+9;01311-902;Avenida Paulista;37;Condomínio Edifício Parque Cultural Paulista;Bela Vista;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107;
+10;;;;;;;;;;;;;;true
