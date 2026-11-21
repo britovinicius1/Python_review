@@ -15,8 +15,8 @@
 <p align="center">
   <a href="#conteúdo">Conteúdo</a> ·
   <a href="exercicios/">Exercícios</a> ·
-  <a href="#POO">POO</a>
-  <a href="#diagrama-de-classes">Diagrama de classes</a>
+  <a href="#POO/">POO</a> ·
+  <a href="#diagrama-de-classes">Diagrama de classes</a> ·
 </p>
 
 ---

@@ -17,3 +17,12 @@ Abração de projetos -> Existe a abstração de processos, quando não precisam
 
 Classe abstrata -> Não serve pra gerar objetos, servee de base pra todas as subclasses virar objeto
 Metodo abstrato(abstract) -> que ta na calsse mae abstrata, mas a subclasse mas vai ter o metodo, se nao nem vai ter na classe. 
+
+
+Uma classe abastrata nunca será instanciada (nunca virara um objeto), ja que ela será usada apenas como base para as subclasses.
+
+Ao definir um conjunto de métodos abstratos, dizemos que estamos criando a interface pública da classe.
+
+Uma classe abstrata pode ter métodos abstratos queu deverão ser obrigatoriamente implementada nas subclasses
+
+Mas uma classe abstrata pode ter métodos concretos se eles fimcopmare da mesma maneira pra todas as subclasses(Don't repeat yourself )
