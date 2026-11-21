@@ -30,9 +30,19 @@ Este repositório foi criado para revisar conceitos fundamentais da linguagem Py
  - Modulos;
  - Lidando com arquivos;
 
- 5. Mais sobre pandas
+ 5. Mais sobre Python
  - List Comprehension
  - 
+
+6. Tratamento de erros
+- try, execpt
+
+7 - Programação orientada a objetos (POO):
+- Classes
+- Objetos
+- Instancias
+- Modularização
+- Herança
 
  7. === Pasta de exercicios === 
  - Resolução de [30 exercicios até o momento]
@@ -42,4 +52,8 @@ Este repositório foi criado para revisar conceitos fundamentais da linguagem Py
         - for [x]
         - while [x]
         - listas [x]
+        - funções [x]
+        - zip [x]
+        - POO
+
 
