@@ -78,3 +78,5 @@ variaveis >>>> dicionarios >>> objetos
 
 
 qualquer coisa no python é um objeto
+
+![Fluxo classes](images/diagrama.png)

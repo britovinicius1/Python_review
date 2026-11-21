@@ -1,59 +1,85 @@
-# Revisão de Python
-Este repositório foi criado para revisar conceitos fundamentais da linguagem Python, reforçando boas práticas e organização de código.
+<h1 align="center">Revisão de Python</h1>
 
-📚 Conteúdo
-1. Fundamentos de Python
-- Variáveis [x] 
-- Tipagem de dados[x] 
-- Entrada e saída (input / print)[x] 
-- Operações básicas[x] 
-- Resolução disafio[x] 
-2. TypeError, Type Check e Type Conversion em Python
-- typeError[x] 
-- try-except[x] 
-- Resolução exercícios[x] 
-- Resolução de desafio com try-except[x] 
+<p align="center">
+  <b>Revisão dos fundamentos de Python, com foco em boas práticas e organização de código.</b>
+</p>
 
-3. Estrutura de dados & condicionais(estruturas de controle de fluxo)
-- if,elif,else[x] 
-- Listas e metodos[x] 
-- Tuplas[x] 
-- Dicionarios[x] 
-- Loops [For, While] [x] 
-- Break & Continue [x] 
-- Resolução de exercicios [x] (feitos no raquivo exercicio tanto da aula 04 quanto da aula 03 - junção de conteudos)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/POO-em%20andamento-yellow" alt="POO">
+  <img src="https://img.shields.io/badge/exerc%C3%ADcios-30-brightgreen" alt="Exercícios">
+  <img src="https://img.shields.io/badge/status-em%20estudo-blue" alt="Status">
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?logo=visualstudiocode&logoColor=white" alt="VS Code">
+</p>
 
- 4. Estrutura de dados e funções
- - Funções;
- - Docstrings & Annotations
- - Desafio funções;
- - Modulos;
- - Lidando com arquivos;
+<p align="center">
+  <a href="#conteúdo">Conteúdo</a> ·
+  <a href="#exercícios">Exercícios</a> ·
+  <a href="#diagrama-de-classes">Diagrama de classes</a>
+</p>
 
- 5. Mais sobre Python
- - List Comprehension
- - 
+---
 
-6. Tratamento de erros
-- try, execpt
+## Conteúdo
 
-7 - Programação orientada a objetos (POO):
-- Classes
-- Objetos
-- Instancias
-- Modularização
-- Herança
+### 1. Fundamentos de Python
+- [x] Variáveis
+- [x] Tipagem de dados
+- [x] Entrada e saída (`input` / `print`)
+- [x] Operações básicas
+- [x] Resolução de desafio
 
- 7. === Pasta de exercicios === 
- - Resolução de [30 exercicios até o momento]
-    - Exercicios sobre:
-        - Base python [x]
-        - Estrutura de controle [x]
-        - for [x]
-        - while [x]
-        - listas [x]
-        - funções [x]
-        - zip [x]
-        - POO
+### 2. TypeError, Type Check e Type Conversion
+- [x] TypeError
+- [x] `try` / `except`
+- [x] Resolução de exercícios
+- [x] Desafio com `try` / `except`
 
+### 3. Estruturas de dados e controle de fluxo
+- [x] `if`, `elif`, `else`
+- [x] Listas e métodos
+- [x] Tuplas
+- [x] Dicionários
+- [x] Loops (`for`, `while`)
+- [x] `break` e `continue`
+- [x] Exercícios (aulas 03 e 04)
 
+### 4. Funções e arquivos
+- [ ] Funções
+- [ ] Docstrings e Annotations
+- [ ] Desafio de funções
+- [ ] Módulos
+- [ ] Lidando com arquivos
+
+### 5. Mais sobre Python
+- [ ] List Comprehension
+
+### 6. Tratamento de erros
+- [ ] `try`, `except`
+
+### 7. Programação Orientada a Objetos
+- [ ] Classes
+- [ ] Objetos
+- [ ] Instâncias
+- [ ] Modularização
+- [ ] Herança
+- [ ] Abstração
+
+## Exercícios
+
+30 exercícios resolvidos até o momento:
+
+- [x] Base Python
+- [x] Estruturas de controle
+- [x] `for`
+- [x] `while`
+- [x] Listas
+- [x] Funções
+- [x] `zip`
+- [ ] POO
+
+## Diagrama de classes
+
+<p align="center">
+  <img src="pictures/classes.jpg" alt="Diagrama de classes" width="600">
+</p>
