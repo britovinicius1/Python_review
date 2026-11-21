@@ -14,7 +14,8 @@
 
 <p align="center">
   <a href="#conteúdo">Conteúdo</a> ·
-  <a href="#exercícios">Exercícios</a> ·
+  <a href="exercicios/">Exercícios</a> ·
+  <a href="#POO">POO</a>
   <a href="#diagrama-de-classes">Diagrama de classes</a>
 </p>
 
@@ -75,12 +76,12 @@
 
 ++30 exercícios resolvidos até o momento:
 
-- [x] Base Python
-- [x] Estruturas de controle
+- [x] `Base Python`
+- [x] `Estruturas de controle`
 - [x] `for`
 - [x] `while`
-- [x] Listas
-- [x] Funções
+- [x] `Listas`
+- [x] `Funções`
 - [x] `zip`
-- [x] POO
+- [x] `POO`
 
