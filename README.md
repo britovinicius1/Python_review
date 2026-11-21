@@ -45,29 +45,35 @@
 - [x] Exercícios (aulas 03 e 04)
 
 ### 4. Funções e arquivos
-- [ ] Funções
-- [ ] Docstrings e Annotations
-- [ ] Desafio de funções
-- [ ] Módulos
-- [ ] Lidando com arquivos
+- [x] Funções
+- [x] Docstrings e Annotations
+- [x] Desafio de funções
+- [x] Módulos
+- [x] Lidando com arquivos
 
 ### 5. Mais sobre Python
-- [ ] List Comprehension
+- [x] List Comprehension
 
 ### 6. Tratamento de erros
-- [ ] `try`, `except`
+- [x] `try`, `except`
 
 ### 7. Programação Orientada a Objetos
-- [ ] Classes
-- [ ] Objetos
-- [ ] Instâncias
-- [ ] Modularização
-- [ ] Herança
-- [ ] Abstração
+- [x] Classes
+- [x] Objetos
+- [x] Instâncias
+- [x] Modularização
+- [x] Herança
+- [x] Abstração
+
+## Diagrama de classes
+
+<p align="center">
+  <img src="pictures/classes.jpg" alt="Diagrama de classes" width="600">
+</p>
 
 ## Exercícios
 
-30 exercícios resolvidos até o momento:
+++30 exercícios resolvidos até o momento:
 
 - [x] Base Python
 - [x] Estruturas de controle
@@ -76,10 +82,5 @@
 - [x] Listas
 - [x] Funções
 - [x] `zip`
-- [ ] POO
+- [x] POO
 
-## Diagrama de classes
-
-<p align="center">
-  <img src="pictures/classes.jpg" alt="Diagrama de classes" width="600">
-</p>
